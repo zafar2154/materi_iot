@@ -79,9 +79,47 @@ body {
   background-color: lightblue;
 }
 
+.translate {
+  border: 1px solid black;
+  background-color: blanchedalmond;
+  width: 75px;
+  height: 75px;
+  transition: 1s;
+}
 
+.container:hover .translate {
+  transform: translate(50px);
+}
+.rotate {
+  border: 1px solid black;
+  background-color: blanchedalmond;
+  width: 75px;
+  height: 75px;
+  transition: 1s;
+}
 
+.rotate:hover {
+  transform: rotate(180deg);
+}
 
+.nano-nano {
+  border: 1px solid black;
+  background-color: blanchedalmond;
+  width: 75px;
+  height: 75px;
+  transition: ease-in 1s;
+}
+.container {
+  border: 1px solid black;
+}
+.container:hover .nano-nano {
+  width: 100px;
+  height: 100px;
+  margin-left: 50px;
+  transform: rotate(360deg);
+  background-color: aqua;
+  color: brown;
+}
 
 
 
