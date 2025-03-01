@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--CSS Font-->
+    <h1>CSS Font</h1>
+    <p
+      style="
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      "
+    >
+      font-family : untuk mengatur jenis font yang akan digunakan
+    </p>
+    <p style="font-size: 30px">font-size</p>
+    <p style="font-weight: 300">font-weight untuk mengatur ketebalan</p>
+    <p style="font-variant: small-caps">
+      Font variant untuk mengubah font menjadi small caps
+    </p>
+    <p style="font-style: italic">font-style: italic</p>
+    <p style="font-style: oblique">font-style: oblique</p>
+    <p style="line-height: 5rem">
+      line-height: untuk mengatur spasi antar baris
+    </p>
+    <hr />
+
+    <!--Text styling-->
+    <h1>CSS Text Styling</h1>
+    <p>
+      color: mengatur warna pada teks. Warna bisa berupa teks yg disediakan
+      <span style="color: blue">autocomplete vscode</span>,
+      <span style="color: rgb(255, 0, 0)">rgb([red], [green], [blue])</span>,
+      <span style="color: #3cb371">code hex (contoh : #000fff)</span>, dan
+      <span style="color: hsl(39, 100%, 50%)">hsl(39,100%,50%)</span>
+    </p>
+    <p style="text-align: center">
+      text-align = Mengatur format paragraf/teks <br />Value : center, justify,
+      left, right
+    </p>
+    <p>
+      text-decoration = mengatur dekorasi pada teks. <br />value :
+      <span style="text-decoration: line-through">line-through</span>
+      <span style="text-decoration: overline">overline</span>
+      <span style="text-decoration: underline">underline</span>
+    </p>
+    <p>
+      text-transform = Mengubah jenis huruf menjadi
+      <span style="text-transform: capitalize">kapital</span> atau
+      <span style="text-transform: uppercase">besar</span>
+      <span style="text-transform: lowercase">HURUF KECIL</span>
+    </p>
+    <p style="word-spacing: 10px">word-spacing : mengatur jarak antar kata</p>
+    <p style="letter-spacing: 10px">
+      letter-spacing = mengatur jarak antar huruf
+    </p>
+    <hr />
+
+    <!--background-->
+    <h1>Background</h1>
+    <p style="background-color: aqua">
+      Kita dapat mengatur background pada suatu elemen. Pada body web ini
+      menggunakan property background-image. Dan pada elemen ini menggunakan
+      background-color
+    </p>
+    <hr />
+
+    <!--Display-->
+    <h1>Display</h1>
+    <p>
+      display digunakan untuk menentukan bagaimana suatu elemen ditampilkan pada
+      halaman web. display memiliki value : inline, block, inline-block, dan
+      none
+    </p>
+    <p style="border: 1px solid black; background-color: #3cb371">
+      Ini merupakan display block
+    </p>
+    <span
+      style="
+        border: 1px solid black;
+        background-color: blanchedalmond;
+        width: 75%;
+      "
+      >ini merupakan inline</span
+    >
+    <p
+      style="
+        display: inline-block;
+        border: 1px solid black;
+        background-color: azure;
+        width: 75%;
+      "
+    >
+      ini merupakan inline-block. Sama seperti inline namun bisa di ubah width
+      dan heightnya seperti block
+    </p>
+    <hr />
+
+    <!--Positioning-->
+    <h1>Positioning</h1>
+    <p>
+      Positioning attribute menentukan jenis metode pemosisian yang digunakan
+      untuk suatu elemen.
+    </p>
+    <div class="positioning">
+      <div class="static">box 1 (static)</div>
+      <div class="relative">box 2 (relative)</div>
+      <div class="absolute">box 3 (absolute)</div>
+      <div class="fixed" id="fixed">box 4 (fixed)</div>
+      <div class="sticky">box 5 (sticky)</div>
+    </div>
+    <br />
+    <hr />
+    <!-- Float -->
+    <h1>Float</h1>
+    <p>
+      adalah properti CSS yang digunakan untuk mengatur bagaimana elemen
+      mengalir dalam sebuah halaman web, terutama dalam mengatur tata letak teks
+      dan gambar. Properti ini memungkinkan elemen untuk "mengapung" di sebelah
+      elemen lain, sehingga konten lain dapat mengalir di sekitarnya.
+    </p>
+    <div class="tanpa-float">
+      <img
+        src="Anime_MonkeyDLuffy.jpg"
+        alt="luffy"
+        style="width: 300px; height: 200px"
+      />
+      <p>
+        Monkey D luffy adalah kapten dari bajak laut topi jerami, ia berambisi
+        untuk menjadi raja bajak laut seperti roger. Ia mempunyai 8 crew : Zoro,
+        Nami, Usopp, Sanji, Chopper, Franky, Brook, Jinbei. Ia berasal dari east
+        blue, dan bertualang mengarungi grandline, banyak musuh yang sudah ia
+        kalahkan dimulai dari kroco hingga yonkou. Saat ini dia berada di new
+        world, mendapatkan 2 red ponegliph dan sedikit lagi impian dia terwujud.
+      </p>
+      <br />
+      <b>diatas adalah contoh tanpa float</b>
+      <hr />
+    </div>
+    <div class="float">
+      <img
+        src="Anime_MonkeyDLuffy.jpg"
+        alt="luffy"
+        style="width: 300px; height: 200px; float: left; margin-right: 20px"
+      />
+      <p>
+        Monkey D luffy adalah kapten dari bajak laut topi jerami, ia berambisi
+        untuk menjadi raja bajak laut seperti roger. Ia mempunyai 8 crew : Zoro,
+        Nami, Usopp, Sanji, Chopper, Franky, Brook, Jinbei. Ia berasal dari east
+        blue, dan bertualang mengarungi grandline, banyak musuh yang sudah ia
+        kalahkan dimulai dari kroco hingga yonkou. Saat ini dia berada di new
+        world, mendapatkan 2 red ponegliph dan sedikit lagi impian dia terwujud.
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa modi
+        cumque omnis maiores error dolorem amet neque. Corporis assumenda
+        quaerat quisquam, dolores placeat repellat. Sed harum laboriosam velit
+        incidunt consequuntur est, accusamus esse itaque illo fugiat officia,
+        veniam neque alias cum hic, culpa sit illum ipsa possimus laborum?
+        Consequatur, fugiat. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Sequi soluta modi harum aut sunt temporibus iste quas debitis
+        numquam iure, repellendus consequatur sapiente, itaque corrupti earum
+        doloremque, ipsa veniam fuga. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Illo, dolor excepturi. Dolore, quasi quis sunt labore
+        fugit rerum nisi blanditiis facilis neque pariatur, aliquid rem deserunt
+        eius? Quod, sed tempora? Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Tenetur veniam, fuga sit cum, possimus magnam nobis
+        est velit sequi nemo impedit, ex omnis! Earum pariatur soluta nihil
+        repellendus dolor totam saepe reprehenderit sapiente eius excepturi esse
+        exercitationem aspernatur officia similique quibusdam vel quam quaerat
+        tempore corporis quae aliquid architecto, fugit commodi! Sed facilis
+        rerum quod voluptas? Rem cumque nam ipsam.
+      </p>
+      <b>ini adalah contoh dengan float</b>
+
+      <hr />
+    </div>
+
+    <!-- flexbox -->
+    <h1>Flexbox</h1>
+    <p>
+      Flexbox adalah model tata letak CSS yang dirancang untuk mengatur dan
+      menyusun elemen dalam suatu kontainer secara fleksibel. Dengan Flexbox,
+      elemen dapat dengan mudah disusun dalam satu dimensi (baris atau kolom),
+      serta dapat menyesuaikan ukuran dan posisinya sesuai dengan ruang yang
+      tersedia.
+    </p>
+    <div class="flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+    </div>
+    <hr>
+    <h1>Grid</h1>
+    <p>CSS Grid adalah sistem tata letak dua dimensi yang memungkinkan kita mengatur elemen dalam baris (rows) dan kolom (columns) dengan lebih fleksibel dibanding Flexbox.
+    </p>
+    <div class="grid">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+* {
+    box-sizing: border-box;
+}
+body {
+  background-image: url(pngtree-geometric-pattern-white-gold-minimalist-creative-background-picture-image_1575961.jpg);
+}
+
+.positioning {
+  background-color: aliceblue;
+  width: 80%;
+  height: 500px;
+  z-index: 100;
+  position: relative;
+}
+.positioning div {
+  border: 2px solid black;
+  width: 70px;
+  height: 70px;
+  background-color: aquamarine;
+  margin: 1px;
+}
+.positioning .static {
+  position: static;
+  left: 20px;
+}
+
+.positioning .relative {
+  position: relative;
+  left: 20px;
+}
+
+.positioning .absolute {
+  position: absolute;
+  left: 100px;
+}
+
+.positioning .fixed {
+  position: fixed;
+  bottom: 50px;
+  left: 200px;
+}
+
+.positioning .sticky {
+  position: sticky;
+  top: 10px;
+  bottom: 10px;
+  left: 400px;
+}
+.flex {
+    background-color: bisque;
+    width: 80%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex div {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    margin: 2px;
+    background-color: lightblue;
+    
+}
+
+.grid {
+  background-color: bisque;
+  width: 80%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.grid div{
+  border: 1px solid black;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden {
+    opacity: 0;
+}
