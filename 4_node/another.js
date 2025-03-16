@@ -1,0 +1,1 @@
+nama = (nama) => {console.log(`aku adalah ${nama}`)}
