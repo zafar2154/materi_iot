@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Input Data</title>
+</head>
+
+<body>
+    <h2>Form Input Data</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="deskripsi">Deskripsi:</label><br>
+        <textarea id="deskripsi" name="deskripsi" rows="5" cols="40" required></textarea><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
