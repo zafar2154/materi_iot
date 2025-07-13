@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Film Search</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    input, button {
+      padding: 10px;
+      width: 70%;
+      font-size: 1em;
+    }
+    #movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .movie-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      text-align: center;
+    }
+    .movie-card img {
+      max-width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Search Film</h1>
+  <input type="text" id="searchInput" placeholder="Masukkan judul film...">
+  <button onclick="searchMovies()">Search Film</button>
+
+  <div id="movies">Hasil pencarian akan tampil di sini.</div>
+
+  <script src="index.js"></script>
+</body>
+</html>
